@@ -4,8 +4,3 @@ export interface TextInputProps {
   onFocus: Function;
 }
 export class TextInput extends React.Component<TextInputProps> {}
-
-export type Person = {
-  age: number;
-}
-
