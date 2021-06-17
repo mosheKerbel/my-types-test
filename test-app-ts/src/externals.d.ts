@@ -1,13 +1,14 @@
-import * as React from 'react';
-
+import React from "react";
 declare module 'my-lib' {
-  export interface TextInputProps {
+  export interface DropdownProps {
+    options: Array<string>;
+    selectedValue: string;
     onChange: Function;
-    value: boolean | string;
-    value2: string | boolean;
+    dataHook?: string;
   }
-  export class TextInput extends React.Component<TextInputProps> {}
-}
+  export class Dropdown extends React.Component<DropdownProps> {};
 
-
-
+  export interface TextInputProps {
+    dataHook?: string;
+  }
+};

@@ -1,13 +1,16 @@
 import React from 'react';
-import { Button, TextInput } from 'my-lib';
-
-import './App.css';
+import { TextInput, Button, Dropdown } from 'my-lib';
 
 function App() {
   return (
     <div className="App">
-      <Button onClick={()=>{}} skin={"alert"}/>
-      <TextInput onChange={()=>{}} value={true} value2={false}/>
+      <Button disabled={false} onClick={()=>{}} skin={"alert"}/>
+      <TextInput onChange={()=>{}} value={"hello world"}
+                 onFocus={()=>{}} dataHook={"hook"}/>
+      <Dropdown options={['green', 'red', 'blue']}
+                selectedValue={"green"}
+                onChange={()=>{}}
+                dataHook={"my-hook"}/>
     </div>
   );
 }

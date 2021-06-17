@@ -1,6 +1,6 @@
 import {Button, ButtonProps} from "./components/button";
-import {TextInput, TextInputProps} from "./components/textInput";
+import {TextInput, Person, TextInputProps} from "./components/textInput";
 
-export {Button, ButtonProps, TextInputProps, TextInput};
+export { Button, Person, ButtonProps, TextInputProps, TextInput};
 
 
